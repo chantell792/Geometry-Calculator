@@ -33,19 +33,19 @@ int main()
  {
      std::cout << "Enter radius: ";
      std::cin >> radius;
+
+     if (radius < 0)
+     {
+         std::cout << "Invalid radius. Please enter a number greater than or equal to 0\n";
+     }
+     else
+     {
+         area = pi * radius * radius;
+         std::cout << "Area of the circle: " << area << std::endl;
+     }
  }
 
- if (radius < 0)
- {
-     std::cout << "Invalid radius. Please enter a number greater than or equal to 0\n";
- }
- else
- {
-     area = pi * radius * radius;
-     std::cout << "Area of the circle: " << area << std::endl;
- }
-
- else if (menuChoice == 2)
+else if (menuChoice == 2)
  {
      std::cout << "Enter length: ";
      std::cin >> length;
@@ -60,12 +60,7 @@ int main()
  {
      area = length * width;
      std::cout << "Area of the rectangle: " << area << std::endl;
- }
- else
- {
-     double area = length * width;
-     std::cout << "Area of the rectangle: " << area << std::endl;
- }
+ }  
 
  else if (menuChoice == 3)
  {
