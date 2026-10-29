@@ -51,7 +51,7 @@ else if (menuChoice == 2)
      std::cin >> length;
      std::cout << "Enter width: ";
      std::cin >> width;
- }
+
  if (length < 0 || width < 0)
  {
      std::cout << "Invalid dimension. Please enter a number greater than or equal to 0\n";
@@ -62,7 +62,7 @@ else if (menuChoice == 2)
      std::cout << "Area of the rectangle: " << area << std::endl;
  }  
 
- else if (menuChoice == 3)
+else if (menuChoice == 3)
  {
      std::cout << "Enter base: ";
      std::cin >> base;
